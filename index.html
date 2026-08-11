@@ -9,16 +9,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#16302e;
-    --teal-deep:#0f4c47;
-    --teal:#12665f;
-    --paper:#f6f4ee;
-    --paper-raised:#ffffff;
-    --gold:#b98a2e;
-    --gold-soft:#e7d3a3;
-    --line:rgba(22,48,46,0.14);
-    --leaf:#4caf50;
-    --sky:#3aa0d8;
+    --ink:#1c3327;
+    --teal-deep:#1f6f4a;
+    --teal:#2c8f63;
+    --paper:#e6f2e3;
+    --paper-raised:#fbfdf8;
+    --gold:#a9843a;
+    --gold-soft:#d8c599;
+    --line:rgba(28,51,39,0.13);
+    --leaf:#5cb35f;
+    --sky:#2f8fa8;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -35,16 +35,7 @@
     *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; }
   }
 
-  /* subtle apothecary cross texture */
-  .texture{
-    position:fixed; inset:0; pointer-events:none; z-index:0;
-    background-image:
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size:64px 64px;
-    opacity:0.35;
-    mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, black 40%, transparent 90%);
-  }
+  /* texture removed per request — plain background */
 
   /* floating decorative icons, fixed to the four corners */
   .floaters{ position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
@@ -210,8 +201,8 @@
     transition:transform 0.4s cubic-bezier(.2,.8,.2,1);
   }
   .card:nth-child(2) .icon{
-    background:linear-gradient(145deg, #1c6f9c, var(--sky));
-    box-shadow:0 10px 20px -8px rgba(28,111,156,0.5);
+    background:linear-gradient(145deg, #14606f, var(--sky));
+    box-shadow:0 10px 20px -8px rgba(20,96,111,0.5);
   }
   .card:hover .icon{ transform:scale(1.08) rotate(-4deg); }
   .icon svg{width:26px; height:26px;}
@@ -250,7 +241,6 @@
 </style>
 </head>
 <body>
-<div class="texture"></div>
 
 <div class="floaters">
   <svg class="f-cross" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18M3 12h18" stroke-width="2.4" stroke-linecap="round"/></svg>
