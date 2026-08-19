@@ -150,15 +150,9 @@
   }
 
   .modules{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:16px;
-  }
-  @media (max-width:720px){
-    .modules{grid-template-columns:1fr 1fr;}
-  }
-  @media (max-width:520px){
-    .modules{grid-template-columns:1fr;}
+    display:flex;
+    flex-direction:column;
+    gap:14px;
   }
 
   .card{
@@ -177,7 +171,6 @@
     box-shadow:0 1px 0 rgba(22,48,46,0.04);
   }
   .card-wide{
-    grid-column:1 / -1;
     flex-direction:row;
     align-items:center;
     gap:18px;
@@ -319,7 +312,7 @@
 
   <div class="modules">
 
-    <a class="card" href="https://ifrs-amp.github.io/ifrs_amp/" target="_blank" rel="noopener">
+    <a class="card card-wide" href="https://ifrs-amp.github.io/ifrs_amp/" target="_blank" rel="noopener">
       <span class="tag">Modul 01</span>
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -327,13 +320,13 @@
           <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#f6f4ee" stroke-width="1.6" stroke-linecap="round"/>
         </svg>
       </div>
-      <h2>Database Staf</h2>
+      <h2>Data Staf, Data Cuti Staf, dan Arsip Surat ke Manajemen</h2>
       <span class="go">Buka modul
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
     </a>
 
-    <a class="card" href="https://ifrs-amp.github.io/penilaian-mahasiswa/" target="_blank" rel="noopener">
+    <a class="card card-wide" href="https://ifrs-amp.github.io/penilaian-mahasiswa/" target="_blank" rel="noopener">
       <span class="tag">Modul 02</span>
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,7 +341,7 @@
       </span>
     </a>
 
-    <a class="card" href="https://digiphamparikesit.github.io/homedf/" target="_blank" rel="noopener">
+    <a class="card card-wide" href="https://digiphamparikesit.github.io/homedf/" target="_blank" rel="noopener">
       <span class="tag">Modul 03</span>
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +357,7 @@
       </span>
     </a>
 
-    <a class="card" href="https://digiphamparikesit.github.io/laporan-harian-farmasi/" target="_blank" rel="noopener">
+    <a class="card card-wide" href="https://digiphamparikesit.github.io/laporan-harian-farmasi/" target="_blank" rel="noopener">
       <span class="tag">Modul 04</span>
       <div class="icon">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
